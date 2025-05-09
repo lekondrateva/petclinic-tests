@@ -1,6 +1,5 @@
 package ui;
 
-import config.TestConfig;
 import io.qameta.allure.Epic;
 import io.qameta.allure.Feature;
 import io.qameta.allure.Severity;

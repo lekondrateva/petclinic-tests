@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools {
-        maven 'Maven 3.9'         // Укажи имя, как в Jenkins → Global Tools → Maven
-        jdk 'JDK 17'              // Аналогично для JDK
+        maven 'Maven 3.9'
+        jdk 'JDK 17'
     }
 
     environment {
@@ -19,7 +19,7 @@ pipeline {
 
         stage('Build & Test') {
             steps {
-                sh 'mvn clean test'
+                bat 'mvn clean test'
             }
         }
 
