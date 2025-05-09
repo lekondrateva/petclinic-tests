@@ -18,7 +18,7 @@ public class LoginTest extends BaseUiTest {
     @Severity(CRITICAL)
     @Test
     void homepageShouldBeAccessible() {
-        driver.get(TestConfig.getBaseUrl());
+        driver.get(getBaseUrl());
         assertTrue(driver.getTitle().contains("PetClinic"));
     }
 
